@@ -1,0 +1,20 @@
+type Link {
+url:String!
+description:String!
+}
+
+type QueryT {
+
+getall:[Link]
+}
+
+type Mutation{
+
+saveLink(url:String!,description:String!):Link
+}
+schema {
+
+query:QueryT
+
+}
+
